@@ -1,0 +1,60 @@
+
+
+/*ABOUT*/
+
+#about {
+	background: #73c38a;
+	padding: 50px 0px 80px;
+}
+#about .smile_heading {
+	color: #fff;
+	margin-top: 60px;
+}
+#about .smile_para {
+	margin: 17px 0px 0px 18px;
+	margin-top: 17px;
+}
+/*ABOUT*/
+
+/*START OF FACTS*/
+.facts {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: url(../images/fact_bg.jpg);
+	background-repeat: no-repeat;
+	padding: 0px 0px 170px;
+	background-position: 30% 20%;
+	color: #fff;
+}
+.fact_list {
+	margin-top: 125px;
+}
+.facts::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.facts .fact_heading {
+	font-family: Rodina regular;
+	font-size: 66px;
+}
+.facts .smile_para {
+	color: #fff;
+	text-align: left;
+	font-size: 30px;
+}
+.facts img {
+	width: 150px;
+       height:150px;
+	margin: 25px auto 35px;
+}
+/*END OF FACTS*/
+

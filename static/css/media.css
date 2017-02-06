@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+@media (min-width: 1200px) {
+.info_bg img {
+	margin-left: -26px;
+}
+#get_involved, #donate .info_text {
+	margin-top: -49px;
+}
+.sponsor {
+	margin-left: -78px;
+}
+.usd {
+	margin-left: -69px;
+}
+.card_place {
+	margin-left: -91px;
+	width: 42%;
+}
+.expire {
+	margin-left: -93px;
+}
+.expire_list1 {
+	margin-left: -74px;
+	margin-right: -18px;
+}
+.security {
+	margin-left: -71px;
+}
+.security .card_place {
+	margin-left: -95px;
+	width: 23%;
+}
+.country {
+	margin-left: -77px;
+}
+.country .required-astreik_card {
+	position: relative;
+	left: 61px;
+}
+.address_place {
+	margin-left: -189px;
+}
+.adress2 {
+	margin: 10px 83px;
+}
+.city {
+	margin-left: -77px;
+}
+.city_name {
+	position: relative;
+	left: 100px;
+}
+.city .required-astreik_card {
+	position: relative;
+	left: 95px;
+}
+.city .required-astreik_card:after {
+	color: #eb9d38;
+	content: ' *';
+	display: inline;
+	font-size: 34px;
+	position: absolute;
+	left: 36px;
+	top: -8px;
+}
+.state {
+	position: relative;
+	left: -43px;
+}
+.seven {
+	width: 54%;
+}
+.left {
+	margin-left: -11px;
+}
+}
+
+@media(min-width: 992px) {
+#get_involved .info_text {
+	margin-top: -49px;
+}
+#involved .info_bg {
+	height: 500px;
+}
+.left {
+	margin-left: -15px;
+}
+}
+
+@media (min-width: 991px) {
+#contact .info_bg {
+	height: 540px;
+}
+}
+
+@media(max-width: 1200px) and (min-width: 992px) {
+  .last{
+     margin-left:77px; 
+ }
+}
+
+@media(max-width: 1200px) and (min-width: 768px) {
+}
+
+@media(max-width: 1200px) and (min-width: 458px) {
+}
+
+@media(max-width: 768px) and (min-width: 468px) {
+}
+
+@media(max-width: 1268px) {
+.form-group {
+	width: 100%!important;
+}
+.border {
+	width: 90%!important;
+	margin: auto;
+}
+}
+
+@media(max-width: 992px) {
+.info_content {
+	top: 165px;
+}
+.info_bg {
+	height: 700px;
+}
+.info_text {
+	font-size: 3.1em;
+	font-weight: 600;
+}
+.info_l_text {
+	font-size: 1.1em;
+}
+}
+
+/*gym*/
+
+
+@media(max-width:768px) {
+}
+
+@media(max-width: 600px) {
+}
+
+@media(max-width: 468px) {
+.submit_btn {
+	margin-left: -10px!important;
+}
+}
+
+@media(max-width: 380px) {
+}
+/* CSS Document */

@@ -1,0 +1,90 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<header>
+
+<!--=====================Start of header_bg=================-->
+  <section class="header_bg">
+    <div class="container">
+      <div class="row" style="position: relative;
+    top: 231px;">
+        <div class="col-md-12">
+          <h1 class="smile_heading">WE BRING<span style="color: #eb9d38;
+    font-size: 56px;
+    display: block;
+    font-weight: 600;">SMILES</span>ON EVERY OCCASSION.</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<!--=====================End of Header_bg=================-->
+
+
+<!--=====================Start of mainr=================-->
+<section id="smiley_info" style="padding:50px 0px 60px">
+  <div class="container">
+    <div class="row">
+      <div class="smile_arrow"> <a class="jumper" href="#about"><img src="images/arrow.png" style="width: 148px;
+    display: block;
+    margin: -10px auto 0px;" alt="down_arrow"/> </a> </div>
+      <p class="text-center" style="text-align: center;
+    font-size: 36px;
+    max-width: 900px;
+    margin: auto;">kidsmiley is a non-profit organization that provides clothes for children in developing countries. </p>
+    </div>
+  </div>
+</section>
+<!--=====================ENd of main=================-->
+
+
+
+<!--=====================Start of about=================-->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 about_text1">
+        <h1 class="smile_heading">The Problem</h1>
+        <p class="smile_para">In most developing countries,parents struggles every day to fulfill their children’s
+          basic needs such as a meal twice a day and a roof over their head; a nice outfit for a special occasion is often the last thing on their mind. </p>
+      </div>
+      <div class="col-md-12 about_text_2">
+        <h1 class="smile_heading">Our Mission</h1>
+        <p class="smile_para">KidSmiley will help children from such marginal communities join in the festivities with the confidence
+          they need all the while trying to foster an environment of sharing and connecting among different religious, cultural and social groups. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=====================End of about=================-->
+
+<!-- ===================Start ofFACTS================== -->
+
+<section class="facts">
+  <div class="container">
+    <div class="row fact_list text-center">
+      <div class="col-md-4 col-sm-12">
+        <div class="fact_text">
+          <h1 class="fact_heading">get involved</h1>
+          <img src="images/get_involved.png" class="img-responsive" alt="involving"/>
+          <p class="smile_para">Partner with us to help KidSmiley grow and reach more children.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="fact_text ">
+          <h1 class="fact_heading">contact us</h1>
+          <img src="images/contact_us_icon.png" class="img-responsive" alt="contact"/>
+          <p class="smile_para">Questions?We got answers! Send us a message and tell us how we can help you!</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="fact_text ">
+          <h1 class="fact_heading">donate</h1>
+          <img src="images/donate_icon.png" class="img-responsive" alt="doante"/>
+          <p class="smile_para">Donations go straight to helping children!Donate today!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
