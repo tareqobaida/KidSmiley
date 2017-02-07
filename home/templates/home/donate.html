@@ -1,0 +1,242 @@
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+    <section class="info_bg" id="donate">
+        <div class="container">
+            <div class="row info_content">
+                <div class="col-md-3"><img src="{% static 'images/donate_icon.png' %}" alt=""/></div>
+                <div class="col-md-9">
+                    <h1 class="info_text">100%<span class="info_l_text">Percent of your donation</span>Helps children
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- main -->
+    <section class="contact_form" style="padding: 70px 0px 45px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2 form_text" style="margin-bottom:20px">
+                    <h2 class="smile_heading">Want to donate cloths?</h2>
+
+                    <p class="smile_para">Contact us <span style="color:#eb9d38">here</span>,so we can help you!</p>
+                </div>
+                <div class="col-md-12" style="border: 3px solid #73c38a; border-radius: 10px;margin-bottom:60px;"></div>
+                <div class="col-md-10 col-md-offset-2 form_text" style="margin-bottom:20px">
+                    <h2 class="smile_heading">Choose Your Ammount</h2>
+
+                    <div class="col-md-12 donate_button">
+                        <button type="submit" class="btn btn-default submit">$20</button>
+                        <button type="submit" class="btn btn-default submit">$50</button>
+                        <button type="submit" class="btn btn-default submit">$100</button>
+                        <button type="submit" class="btn btn-default submit">Other</button>
+                    </div>
+
+                    <!-- Input donation amount-->
+                    <div class="form-group col-md-9 sponsor">
+                        <div class="col-md-5">
+                            <label class="form_label required-astreik2" for="exampleInputEmail1">Your Donation </label>
+                        </div>
+                        <div class="col-md-4 usd">
+                            <input name="text" type="text" class="form-control">
+
+                            <p class="text-error"> Please give a valid Number</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Green border-->
+                <div class="col-md-12 border"
+                     style="border: 3px solid #73c38a; border-radius: 10px;margin-bottom:35px;"></div>
+                <div class="col-md-10 col-md-offset-2 form_element">
+                    <h2 class="smile_heading" style="margin-bottom:20px">Your Information</h2>
+
+                    <form>
+                        <!-- input name-->
+                        <div class="form-group col-md-9">
+                            <div class="col-md-2">
+                                <label class="form_label required-astreik" for="name">Name</label>
+                            </div>
+                            <div class="col-md-5 ">
+                                <input name="name_first" type="text" aria-required="true" required="first-name"
+                                       placeholder="First Name" class="form-control required name">
+                            </div>
+                            <div class="col-md-5 left">
+                                <input name="name_last" type="text" aria-required="true" required="first-name"
+                                       placeholder="Last Name" class="form-control required name">
+                            </div>
+                            <p class="name-error"> Please enter your name</p>
+                        </div>
+
+                        <!--  Input emial name-->
+                        <div class="form-group col-md-9 notification" style="position:relative">
+                            <div class="col-md-2">
+                                <label class="form_label required-astreik" for="exampleInputEmail1">Email</label>
+                            </div>
+                            <div class="col-md-7">
+                                <input name="email" type="email" class="form-control" id="exampleInputEmail1">
+
+                                <p class="email-error"> Please give a valid e-mail address</p>
+                            </div>
+                            <div class="col-md-3"><span style="font-size:19px">your receipt will be emailed here</span>
+                            </div>
+                        </div>
+
+                        <!--input phone name-->
+                        <div class="form-group col-md-9">
+                            <div class="col-md-2">
+                                <label class="form_label required-astreik" for="exampleInputEmail1">Phone</label>
+                            </div>
+                            <div class="col-md-7">
+                                <input name="number" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                    <!--form-->
+                </div>
+                <div class="col-md-12 border"
+                     style="border: 3px solid #73c38a; border-radius: 10px;margin-bottom:35px;"></div>
+                <div class="col-md-10 col-md-offset-2 form_element">
+                    <h2 class="smile_heading" style="margin-bottom:20px">Payment details</h2>
+
+                    <form>
+
+                        <!--first Name and last name input-->
+                        <div class="form-group col-md-9">
+                            <div class="col-md-2">
+                                <label class="form_label required-astreik" for="name">Name</label>
+                            </div>
+                            <div class="col-md-5 ">
+                                <input name="name_first" type="text" aria-required="true" required="first-name"
+                                       placeholder="First Name" class="form-control required name">
+                            </div>
+                            <div class="col-md-5 left">
+                                <input name="name_last" type="text" aria-required="true" required="first-name"
+                                       placeholder="Last Name" class="form-control required name">
+                            </div>
+                            <p class="name-error"> Please enter your name</p>
+                        </div>
+
+                        <!--Card Number input-->
+                        <div class="form-group col-md-9 sponsor">
+                            <div class="col-md-5">
+                                <label class="form_label required-astreik_card" for="exampleInputEmail1">Card
+                                    Number </label>
+                            </div>
+                            <div class="col-md-6 card_place">
+                                <input name="card" type="text" class="form-control">
+
+                                <p class="text-error"> Please give a valid Number</p>
+                            </div>
+                        </div>
+
+                        <!--Expiration date input-->
+                        <div class="form-group col-md-9 expire">
+                            <div class="col-md-5">
+                                <label class="form_label required-astreik_expire" for="exampleInputEmail1">Expiration
+                                    Date </label>
+                            </div>
+                            <div class="col-md-3 expire_list1">
+                                <input name="name" type="text" aria-required="true" required="first-name"
+                                       placeholder="Month" class="form-control required name">
+                            </div>
+                            <div class="col-md-3">
+                                <input name="name" type="text" aria-required="true" required="first-name"
+                                       placeholder="Year" class="form-control required name">
+                            </div>
+                        </div>
+
+                        <!--Security code input-->
+                        <div class="form-group col-md-9 security">
+                            <div class="col-md-5">
+                                <label class="form_label required-astreik_security" for="exampleInputEmail1">Security
+                                    Code</label>
+                            </div>
+                            <div class="col-md-4 card_place">
+                                <input name="security" type="text" class="form-control">
+
+                                <p class="text-error"> Please give a valid Number</p>
+                            </div>
+                        </div>
+
+                        <!--Country  Name input-->
+                        <div class="form-group col-md-9 country">
+                            <div class="col-md-5">
+                                <label class="form_label required-astreik_card"
+                                       for="exampleInputEmail1">Country </label>
+                            </div>
+                            <div class="col-md-6 card_place">
+                                <input name="card" type="text" class="form-control">
+
+                                <p class="text-error"> Please give a valid Number</p>
+                            </div>
+                        </div>
+
+                        <!--Address1 input-->
+                        <div class="form-group col-md-12 country" is="address">
+                            <div class="col-md-5">
+                                <label class="form_label required-astreik_card"
+                                       for="exampleInputEmail1">Address </label>
+                            </div>
+                            <div class="col-md-7 address_place seven">
+                                <input name="adress1" type="text" class="form-control">
+
+                                <p class="text-error"> Please give a valid Number</p>
+                            </div>
+                        </div>
+
+                        <!--Address2 input-->
+                        <div class="form-group col-md-12 country" is="address">
+                            <div class="col-md-5">
+                                <label class="form_label adress2 " for="exampleInputEmail1">Address2 </label>
+                            </div>
+                            <div class="col-md-7 address_place seven">
+                                <input name="adress2" type="text" class="form-control">
+
+                                <p class="text-error"> Please give a valid Number</p>
+                            </div>
+                        </div>
+
+                        <!--Address1 input-->
+                        <div class="form-group col-md-12 city" is="address">
+                            <div class="col-md-5 city_name">
+                                <label class="form_label required-astreik_card_city"
+                                       for="exampleInputEmail1">City </label>
+                            </div>
+                            <div class="col-md-7 address_place seven">
+                                <input name="city" type="text" class="form-control">
+
+                                <p class="text-error"> Please give a valid Number</p>
+                            </div>
+                        </div>
+
+                        <!--State and zip input-->
+                        <div class="form-group col-md-9">
+                            <div class="col-md-2 state">
+                                <label class="form_label required-astreik" for="name">State&nbsp;&&nbsp;Zip</label>
+                            </div>
+                            <div class="col-md-6 last">
+                                <input name="state" type="text" aria-required="true" required="" placeholder=""
+                                       class="form-control required name">
+                            </div>
+                            <div class="col-md-3 left">
+                                <input name="zip" type="text" aria-required="true" required="" placeholder=""
+                                       class="form-control required name">
+                            </div>
+                            <p class="name-error"> Please enter your name</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-group col-md-9 col-xs-12 text-center submit_btn" style="margin-left:25px">
+                    <button type="submit" style="background:#eb9d38" class="btn btn-default submit">Submit</button>
+                    <span style="font-size:28px">Amount:<span
+                            style="position: absolute;font-size: 39px;font-weight: 900;">$0.00</span></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+{% endblock %}

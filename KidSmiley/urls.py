@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from home.views import home
+from home.views import home, get_involved, contact_us, donate
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', home, name='home')
+    url(r'^$', home, name='home'),
+    url(r'^get-involved/$', get_involved, name='get_involved'),
+    url(r'^contact-us/$', contact_us, name='contact_us'),
+    url(r'^donate/$', donate, name='donate'),
 ]
