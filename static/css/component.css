@@ -23,9 +23,23 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 footer .contact_icon .fa {
-	 font-size: 20px;
-	 margin: 0px 9px;
-	 color: #8abfe6;
+	margin: 0px 9px;
+	background: #fff;
+	color: #eb9d38;
+	border-radius: 50%;
+	width: 53px;
+	height: 53px;
+	text-align: center;
+	padding: 10px 11px;
+	font-size: 36px;
+	text-decoration: none!important;
+	transition: .3s;
+}
+footer .contact_icon .fa:hover {
+  color:#000;
+}
+footer .contact_icon{
+	margin-top:46px;
 }
 .smile_heading {
 	font-size: 46px;
