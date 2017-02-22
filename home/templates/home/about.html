@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Donate | KidSmiley</title>
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/component.css"/>
-<link rel="stylesheet" href="css/about.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-<header>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <div id="logo_bg"> <a class="navbar-brand" href="#featured"> <img src="images/logo.png" alt="logo"/> </a> </div>
-      </div>
-      <!-- navbar-header -->
-      <div class="collapse navbar-collapse" id="collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">home</a></li>
-          <li><a href="about.html">about us</a></li>
-          <li><a href="get_involved.html">get involved</a></li>
-          <li><a href="contact.html">contact us</a></li>
-          <li><a href="donate.html">donate</a></li>
-        </ul>
-      </div>
-      <!-- collapse navbar-collapse -->
-    </div>
-    <!-- container -->
-  </nav> <!--nav-->
-
-<!--=====================Start of header_bg=================-->
-
-</header>
-<!--=====================End of Header_bg=================-->
-
-
-
-
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+{% block content %}
 
 
 <!--=====================Start of about=================-->
@@ -92,41 +52,4 @@
 
 
 
-<!--=====================Start of footer=================-->
-<footer>
-  <div class="content container-fluid">
-    <div class="row">
-      <div class="col-md-3 col-sm-8 col-sm-offset-4 col-xs-10 col-md-offset-0 col-xs-offset-2">
-        <p class="logo_margin"><img src="images/logo_white.png" style="width:220px" alt="logo"/> <a href="http://kidsmiley.com" ></a></p>
-      </div>
-      <!-- col-sm-6 -->
-
-      <div class="col-md-3 col-sm-8 col-sm-offset-4 col-xs-10 col-md-offset-0 col-xs-offset-2">
-        <ul class="list-inline contact_icon">
-          <a href="#" title="Tweet us!"> <img src="images/twitter.png" alt="twitter"/> </a> <a href="#" title="Like us!"> <img src="images/facebook.png" alt="twitter"/> </a> <a href="#" title="Connect wih us!"> <img src="images/linkedin.png" alt="twitter"/> </a>
-        </ul>
-      </div>
-      <div class="col-md-6 col-sm-8 col-sm-offset-2 col-xs-12 col-md-offset-0 col-xs-offset-0">
-        <nav class="navbar navbar-default" role="navigation">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">get involved</a></li>
-            <li><a href="#">contact us</a></li>
-            <li><a href="#">donate</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- col-sm-6 -->
-    </div>
-    <!-- row -->
-  </div>
-  <!-- content container -->
-</footer>
-<!--=====================End of footer=================-->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="js/myscript.js"></script>
-</body>
-</html>
+{% endblock %}
