@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from home.views import home, get_involved, contact_us, donate
+from home.views import home, get_involved, contact_us, donate, about_us
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,4 +24,5 @@ urlpatterns = [
     url(r'^get-involved/$', get_involved, name='get_involved'),
     url(r'^contact-us/$', contact_us, name='contact_us'),
     url(r'^donate/$', donate, name='donate'),
+    url(r'^about-us/$', TemplateView.as_view(template_name='home/about.html'), name='about_us'),
 ]

@@ -6,6 +6,9 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'home/home.html')
 
+def about_us(request):
+    return render(request, 'home/about.html')
+
 
 def get_involved(request):
     return render(request, 'home/get_involved.html')
